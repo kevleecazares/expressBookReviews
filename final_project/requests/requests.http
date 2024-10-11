@@ -1,0 +1,67 @@
+### GET ALL BOOKS
+GET http://localhost:5000/ HTTP/1.1
+
+### GET BOOK BY ISBN
+GET http://localhost:5000/isbn/9780316038386 HTTP/1.1
+
+### GET BOOK BY AUTHOR
+GET http://localhost:5000/author/Stephenie Meyer HTTP/1.1
+
+### GET BOOK BY TITLE
+GET http://localhost:5000/title/Eclipse HTTP/1.1
+
+### GET REVIEWS OF A BOOK BY ISBN
+GET http://localhost:5000/review/9780316038386 HTTP/1.1
+
+### REGISTER BOOK
+POST http://localhost:5000/register HTTP/1.1
+content-type: application/json
+
+{
+    "author": "Stephenie Meyer",
+    "title": "Eclipse",
+    "isbn": "9780316038337",
+    "reviews": [{
+        "comment": "Not what I expected"
+    }]
+}
+
+### CREATE USER
+POST http://localhost:5000/customer/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "bookworm",
+    "password": "12345"
+}
+
+### LOGIN
+POST http://localhost:5000/customer/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "bookworm",
+    "password": "12345"
+}
+
+### ADD REVIEWS BY ISBN
+PUT http://localhost:5000/customer/auth/review/9780316038386 HTTP/1.1
+content-type: application/json
+
+{
+    "username": "bookworm",
+    "password": "12345",
+    "reviews": 
+    [{
+        "comment":"I loved it"
+    }]
+}
+
+### DELETE REVIEW BY ISBN
+DELETE  http://localhost:5000/customer/auth/review/9780316038386/f5a2ad3e-2029-4192-a33e-f139bf1f5913 HTTP/1.1
+content-type: application/json
+
+{
+    "username": "bookworm",
+    "password": "12345"
+}

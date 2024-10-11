@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "0b63c20a-554f-4d93-88b9-7fa969e34f71",
+    "author": "Stephenie Meyer",
+    "title": "Eclipse",
+    "isbn": "9780316038337",
+    "reviews": [
+      {
+        "_idReview": "8da1a6c2-1357-48d3-b06a-3012e21802ff",
+        "comment": "Not what I expected"
+      }
+    ]
+  },
+  {
+    "_id": "b3766e6b-0811-4158-b67a-386cb62630fd",
+    "author": "Stephenie Meyer",
+    "title": "Twilight",
+    "isbn": "9780316038386",
+    "reviews": [
+      {
+        "_idReview": "8406562a-28e3-4d85-b347-b1ea2dba3f74",
+        "comment": "Very romantic"
+      },
+      {
+        "_idReview": "9bf4a1f1-14d6-4ca0-87ce-8cca46cda7dd",
+        "comment": "Light lecture"
+      }
+    ]
+  }
+]
